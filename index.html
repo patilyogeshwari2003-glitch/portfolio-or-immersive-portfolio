@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogeshwari Patil - Automation Engineer</title>
+  <meta name="description"
+    content="Portfolio of Yogeshwari Patil, Automation Engineer specializing in Python, pywinauto, and Data Processing.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;500;700&display=swap"
+    rel="stylesheet">
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <!-- WebGL Canvas -->
+  <canvas class="webgl"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">YOGESHWARI.</div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#projects">Work</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Overlay -->
+  <div class="content-wrapper">
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Yogeshwari<br><span>Patil.</span></h1>
+        <p class="hero-subtitle">"Automating the routine so we can innovate the exceptional." <br><span
+            style="font-size: 0.9em; opacity: 0.8; margin-top: 10px; display: inline-block;">— Automation
+            Engineer</span></p>
+        <div class="hero-socials">
+          <a href="mailto:yogeshwari.patil@example.com" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            patilyogeshwari2003@gmail.com
+          </a>
+          <a href="tel:+910000000000" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            +91 9765757429
+          </a>
+          <a href="https://linkedin.com/in/yogeshwaripatil" class="social-link" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/yogeshwaripatil" class="social-link" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.24c3-.34 6-1.53 6-6.36 0-1.4-.5-2.55-1.33-3.44.13-.34.58-1.63-.13-3.4 0 0-1.1-.35-3.6 1.34A12.6 12.6 0 0 0 12 2.5c-1.4 0-2.8.2-4.1.58-2.5-1.69-3.6-1.34-3.6-1.34-.71 1.77-.26 3.06-.13 3.44C3.5 10.6 3 11.75 3 13.15c0 4.8 3 6 6 6.36a4.8 4.8 0 0 0-1 3.24v4" />
+            </svg>
+            GitHub
+          </a>
+        </div>
+        <div class="button-group" style="display: flex; gap: 1rem; align-items: center;">
+          <a href="#projects" class="cta-button">Explore Work</a>
+          <button id="download-pdf-btn" class="cta-button secondary icon-only" title="Download Resume"
+            style="cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.2); background: transparent;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" x2="12" y1="15" y2="3" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="section-content glass-panel">
+        <h2>About Me</h2>
+        <div class="about-text-box">
+          <p>I am a results-driven Automation Engineer currently building robust, reliable solutions at Cyncly. With a
+            strong passion for Python and frameworks like pywinauto, I specialize in diving deep into code bottlenecks
+            to streamline complex UI workflows, process massive datasets in Excel, and reverse-engineer manual
+            processes. My ultimate goal is delivering cleaner, faster systems that eliminate repetitive tasks so teams
+            can focus entirely on innovation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <div class="section-content">
+        <h2>Core Expertise</h2>
+
+        <div class="skills-layout-grid">
+
+          <!-- Automation / Tech Box -->
+          <div class="matrix-card">
+            <div class="matrix-header">
+              <h3>Automation & Technical</h3>
+              <div class="hex-icon"></div>
+            </div>
+            <div class="matrix-divider"></div>
+            <div class="matrix-chips">
+              <span class="matrix-chip">Python</span>
+              <span class="matrix-chip">PyWinAuto</span>
+              <span class="matrix-chip">Regex</span>
+              <span class="matrix-chip">Excel Automation</span>
+              <span class="matrix-chip">UI Debugging</span>
+              <span class="matrix-chip">Data Cleaning</span>
+              <span class="matrix-chip">Test Automation</span>
+            </div>
+          </div>
+
+          <!-- Soft Skills Box -->
+          <div class="matrix-card">
+            <div class="matrix-header">
+              <h3>Soft Skills</h3>
+              <div class="hex-icon"></div>
+            </div>
+            <div class="matrix-divider"></div>
+            <div class="matrix-chips">
+              <span class="matrix-chip">Problem Solving</span>
+              <span class="matrix-chip">Effective Communication</span>
+              <span class="matrix-chip">Team Collaboration</span>
+              <span class="matrix-chip">Adaptability</span>
+              <span class="matrix-chip">Critical Thinking</span>
+              <span class="matrix-chip">Time Management</span>
+            </div>
+          </div>
+
+          <!-- Languages Box -->
+          <div class="matrix-card">
+            <div class="matrix-header">
+              <h3>Languages Spoken</h3>
+              <div class="hex-icon"></div>
+            </div>
+            <div class="matrix-divider"></div>
+            <div class="matrix-chips">
+              <span class="matrix-chip">English</span>
+              <span class="matrix-chip">Hindi</span>
+              <span class="matrix-chip">Marathi</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section experience" style="padding-top: 5rem; padding-bottom: 5rem;">
+      <div class="section-content">
+        <h2>Career Journey</h2>
+
+        <div class="experience-timeline">
+
+          <!-- Experience -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel" style="padding: 2.5rem;">
+              <div class="experience-header">
+                <h3 class="gradient-text-theme">RPA Bot Developer (Automation Engineer)</h3>
+                <div style="margin-top: 1rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                  <span class="experience-company-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      style="margin-right: 6px;">
+                      <rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
+                      <path d="M9 22v-4h6v4" />
+                      <path d="M8 6h.01" />
+                      <path d="M16 6h.01" />
+                      <path d="M12 6h.01" />
+                      <path d="M12 10h.01" />
+                      <path d="M12 14h.01" />
+                      <path d="M16 10h.01" />
+                      <path d="M16 14h.01" />
+                      <path d="M8 10h.01" />
+                      <path d="M8 14h.01" />
+                    </svg>
+                    Cyncly
+                  </span>
+                  <span class="experience-duration">1 Year (Present)</span>
+                </div>
+              </div>
+              <div class="experience-details">
+                <ul>
+                  <li><span class="bullet-highlight">Strategic Deployment:</span> Spearhead the design and development
+                    of reliable RPA bots to eliminate manual operations and drastically reduce processing times.</li>
+                  <li><span class="bullet-highlight">Technical Expertise:</span> Specialize in <strong>Python</strong>
+                    and <strong>pywinauto</strong> to architect complex UI interactions and validate logic across
+                    enterprise systems.</li>
+                  <li><span class="bullet-highlight">Data Processing:</span> Develop dynamic pipelines utilizing Regex
+                    and Excel automation for rapid extraction, formatting, and analysis of large datasets.</li>
+                  <li><span class="bullet-highlight">Cross-Functional Integration:</span> Collaborate with teams to
+                    reverse-engineer legacy processes, integrating automated scripts that enhance product robustness.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel" style="padding: 2.5rem;">
+              <div class="experience-header">
+                <h3 class="gradient-text-theme">B.Tech in Computer Science Eng.</h3>
+                <div style="margin-top: 1rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                  <span class="experience-company-badge" style="color: var(--text-primary);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      style="margin-right: 6px;">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg>
+                    KCE College of Engineering & Management,Jalgaon.
+                  </span>
+                  <span class="experience-duration">2021-2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pre-Education -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel" style="padding: 2.5rem;">
+              <div class="experience-header"
+                style="border-bottom: 1px solid var(--glass-border); padding-bottom: 1.5rem; margin-bottom: 1.5rem;">
+                <h3 class="gradient-text-theme" style="font-size: 2.2rem; display: block;">Academic Foundation</h3>
+              </div>
+              <div class="experience-details">
+                <div style="margin-bottom: 1.5rem;">
+                  <h4
+                    style="color: var(--text-primary); font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 0.4rem;">
+                    Higher Secondary Certificate (HSC)</h4>
+                  <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.6;">
+                    <strong style="color: var(--accent-color);">81.33%</strong> — <span
+                      style="color: var(--text-primary);">Swami Viveknand Jr. College,Jalgaon</span>
+                  </p>
+                </div>
+                <div>
+                  <h4
+                    style="color: var(--text-primary); font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 0.4rem;">
+                    Secondary School Certificate (SSC)</h4>
+                  <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.6;">
+                    <strong style="color: var(--accent-color);">67.60%</strong> — <span
+                      style="color: var(--text-primary);">Orion English Medium School, Jalgaon</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel" style="padding: 2.5rem;">
+              <div class="experience-header border-none" style="border: none; margin-bottom: 0; padding-bottom: 0;">
+                <h3 class="gradient-text-theme">Professional Certifications</h3>
+              </div>
+              <div class="experience-details" style="margin-top: 1.5rem;">
+                <ul>
+                  <li><span class="bullet-highlight">[Certification Name]:</span> Issuing Authority, Year. (Focus on
+                    your specific tool specialization)</li>
+                  <li><span class="bullet-highlight">[Certification Name]:</span> Issuing Authority, Year.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="section-content">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+
+          <div class="project-card glass-panel detailed-card">
+            <div class="project-info detailed-info">
+              <h3>UI Automation for Desktop App</h3>
+              <p class="project-desc">Engineered a robust RPA solution to handle complex UI iterations automatically
+                across legacy desktop applications, completely abstracting manual workflows.</p>
+              <ul class="project-metrics">
+                <li>Saved ~[XX] hours of manual QA processing workflow per week.</li>
+                <li>Increased test execution reliability by [XX]%.</li>
+              </ul>
+              <div class="project-stack">
+                <span class="stack-badge">Python</span>
+                <span class="stack-badge">pywinauto</span>
+                <span class="stack-badge">Desktop Apps</span>
+              </div>
+              <div style="margin-top: 1.5rem;">
+                <a href="#" class="cta-button secondary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">View
+                  Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass-panel detailed-card">
+            <div class="project-info detailed-info">
+              <h3>Proofing System Automation</h3>
+              <p class="project-desc">Developed Python scripts to deeply automate testing verification operations,
+                validating system constraints with low-latency and strict precision.</p>
+              <ul class="project-metrics">
+                <li>Deployed headless automation spanning across [XX] validation rules.</li>
+                <li>Boosted overall system accuracy to [XX]%.</li>
+              </ul>
+              <div class="project-stack">
+                <span class="stack-badge">Python</span>
+                <span class="stack-badge">Automation scripts</span>
+                <span class="stack-badge">QA</span>
+              </div>
+              <div style="margin-top: 1.5rem;">
+                <a href="#" class="cta-button secondary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">View
+                  Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card glass-panel detailed-card">
+            <div class="project-info detailed-info">
+              <h3>Data Cleaning & Processing Component</h3>
+              <p class="project-desc">Automated bulk data extraction and structural formatting in complex Excel
+                workbooks natively executing complex Regex routines in Python.</p>
+              <ul class="project-metrics">
+                <li>Successfully sanitized over [XX],000 records daily without error.</li>
+                <li>Improved data turnaround timelines by [XX] hours per cycle.</li>
+              </ul>
+              <div class="project-stack">
+                <span class="stack-badge">Python</span>
+                <span class="stack-badge">Regex</span>
+                <span class="stack-badge">Excel / Pandas</span>
+              </div>
+              <div style="margin-top: 1.5rem;">
+                <a href="#" class="cta-button secondary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">View
+                  Project</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content glass-panel"
+        style="border-radius: 20px 20px 0 0; padding: 2rem; border-bottom: none; display: flex; align-items: center; justify-content: center; border-left: none; border-right: none;">
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">&copy; 2026 Yogeshwari Patil. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+
+
+    <script>
+      // 100% Reliable PDF Download - Opens dedicated resume page in new tab
+      window.addEventListener('DOMContentLoaded', () => {
+        const downloadBtn = document.getElementById('download-pdf-btn');
+        if (downloadBtn) {
+          downloadBtn.onclick = function (e) {
+            e.preventDefault();
+            window.open('resume.html', '_blank');
+          };
+        }
+      });
+    </script>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+
+</html>
